@@ -1,6 +1,6 @@
 # Day 2 
 
-### -[x] Task: LC977, LC209, LC59
+### - [x] Task: LC977, LC209, LC59
 
 #### LC 977: Squares of a Sorted Array
 Description: Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
