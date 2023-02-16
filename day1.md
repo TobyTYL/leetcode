@@ -1,11 +1,11 @@
-## Day 1 
+# Day 1 
 - [x]Task: LC 704, LC 27
 
 Elements of an array cannot be deleted, they can only be overwritten.
 
-LC 704: Binary search
+### LC 704: Binary search
 
-Use binary search: 数组为有序数组，同时题目还强调数组中无重复元素。
+#### Use binary search: 数组为有序数组，同时题目还强调数组中无重复元素。
 
 写二分法经常写乱，主要是因为对区间的定义没有想清楚，区间的定义就是不变量。要在二分查找的过程中，保持不变量，就是在while寻找中每一次边界的处理都要坚持根据区间的定义来操作，这就是循环不变量规则。
 
@@ -34,4 +34,11 @@ if (nums[middle] > target) right 更新为 middle，因为当前nums[middle]不�
 在数组：1,2,3,4,7,9,10中查找元素2，如图所示：（注意和方法一的区别）
 
 <img  alt="Alt text" src="https://img-blog.csdnimg.cn/20210311153123632.jpg">
+
+### LC 27: Remove elements
+
+target 为2
+[2,2,3,3] -> [3,3, _, _] -> [3,3]
+#### Idea: 双指针，慢的从0开始，当快指针指向的位置的值等于target时候。慢指针指向的地方的值 = 快指针指的地方的值。（覆盖而不是删除）
+
 
