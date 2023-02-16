@@ -1,11 +1,11 @@
 # Day 2 
 
-### - [x] Task: LC977, LC209, LC59
+### -[x] Task: LC977, LC209, LC59
 
 #### LC 977: Squares of a Sorted Array
 Description: Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
 
-###Ideal: 
+### Ideal: 
 * Since this is a non-decreasing array, the beginning and the end will be the greast value whole array. 
 
 * So first step is to find the biggest value
@@ -24,7 +24,7 @@ If we are using two pointer to deal with it, it may be __O(n)__
 
 Description: Given an array of positive integers nums and a positive integer target, return the minimal length of a __subarray__ whose sum is greater than or equal to target. If there is no such subarray, return 0 instead.
 
-###Ideal: Sliding window
+### Ideal: Sliding window
 
 ~~Brutal force: Two for loop, keep looking for subsequences that meet the conditions. __Time complexity__: O(n^2)~~
 
@@ -71,7 +71,7 @@ class Solution(object):
 #### LC 59
 Description: Given a positive integer n, generate an n x n __matrix__ filled with elements from 1 to n2 in spiral order. 
 
-###Ideal: 
+### Ideal: 
 * 循环--转多少次
 *  判断左闭右开还是左闭右闭（区间的定义），只处理第一个节点 不处理最后一个节点
 
