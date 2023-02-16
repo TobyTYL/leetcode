@@ -1,6 +1,5 @@
 # Day 1 
 - [x] Task: LC 704, LC 27
-
 Elements of an array cannot be deleted, they can only be overwritten.
 
 ### LC 704: Binary search
