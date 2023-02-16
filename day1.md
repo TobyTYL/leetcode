@@ -1,5 +1,5 @@
 # Day 1 
-- [x]Task: LC 704, LC 27
+- [x] Task: LC 704, LC 27
 
 Elements of an array cannot be deleted, they can only be overwritten.
 
@@ -40,5 +40,4 @@ if (nums[middle] > target) right 更新为 middle，因为当前nums[middle]不�
 target 为2
 [2,2,3,3] -> [3,3, _, _] -> [3,3]
 #### Idea: 双指针，慢的从0开始，当快指针指向的位置的值等于target时候。慢指针指向的地方的值 = 快指针指的地方的值。（覆盖而不是删除）
-
 
