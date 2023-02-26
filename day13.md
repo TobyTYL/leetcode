@@ -94,7 +94,7 @@ Output: [1,2]
 
 
 Ans:
-```
+```py
 class Solution(object):
     def topKFrequent(self, nums, k):
         """
