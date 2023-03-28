@@ -1,5 +1,6 @@
 # Day 37
--[x] LC 738
+
+- [x] LC 738
 
 # LC 738. Monotone Increasing Digits
 
