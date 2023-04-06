@@ -13,7 +13,7 @@ Example:
 Input: n = 10
 Output: 9
 ```
-
+#
 ## Ideal: 
 *本题只要想清楚个例，例如98，一旦出现strNum[i - 1] > strNum[i]的情况（非单调递增），首先想让strNum[i - 1]减一，strNum[i]赋值9，这样这个整数就是89。就可以很自然想到对应的贪心解法了。
 
