@@ -2,7 +2,7 @@
 
 - [x] Task: LC977, LC209, LC59
 
-#### LC 977: Squares of a Sorted Array
+## LC 977: Squares of a Sorted Array
 Description: Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
 
 ### Ideal: 
@@ -19,7 +19,7 @@ __Time complexity__: O(n + nlogn) or O(nlogn) depends on the sort algorithm.
 If we are using two pointer to deal with it, it may be __O(n)__
 
 
-#### LC 209 Minimum Size Subarray Sum
+## LC 209 Minimum Size Subarray Sum
 
 Description: Given an array of positive integers nums and a positive integer target, return the minimal length of a __subarray__ whose sum is greater than or equal to target. If there is no such subarray, return 0 instead.
 
@@ -46,7 +46,7 @@ __Time Complexity:__ O(n)
 __Space Complexity:__ O(1)
 
 
-```Python
+```Python3
 class Solution(object):
     def minSubArrayLen(self, target, nums):
         #起始位置；终止位置
