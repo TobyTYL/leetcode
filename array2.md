@@ -46,20 +46,11 @@ __Time Complexity:__ O(n)
 __Space Complexity:__ O(1)
 
 
-<<<<<<< HEAD:array2.md
 ```Python
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         start = 0
         pointer = 0
-=======
-```Python3
-class Solution(object):
-    def minSubArrayLen(self, target, nums):
-        #起始位置；终止位置
-        i = 0
-        j = 0
->>>>>>> e5241e67f916dcd3c312d6bb3fa042a3f88878c9:day2.md
         size = len(nums)
         sum_v = 0
         result = float("inf")
