@@ -9,27 +9,23 @@
 
 ```python
 # Definition for singly-linked list.
-# class ListNode(object):
+# class ListNode:
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-class Solution(object):
-    def removeElements(self, head, val):
-        """
-        :type head: ListNode
-        :type val: int
-        :rtype: ListNode
-        """
-        # virtual 
-        dummy_head = ListNode(next=head)
-        cur = dummy_head
-        while(cur.next!=None):
-            if(cur.next.val == val):
-                cur.next = cur.next.next
+class Solution:
+    def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
+        # 为了判断头节点是否需要删除，需要设置一个虚拟头节点
+        dummy_head = ListNode(next = head)
+        current = dummy_head
+        # 操作链表
+        while current.next:
+            if current.next.val == val:
+                current.next = current.next.next
             else:
-                cur = cur.next
+                current = current.next
+        # 返回头节点
         return dummy_head.next
-
 ```
 
 ### LC 707 Design the linked list
@@ -215,7 +211,7 @@ class MyLinkedList:
             node.prev.next, node.next.prev = node.next, node.prev
 ```
 
-### LC 206 Reverse Linked List
+## LC 206 Reverse Linked List
 Description: Given the head of a singly linked list, reverse the list, and return the reversed list.
 
 Ex: 
