@@ -82,6 +82,19 @@ class Solution(object):
      
 ```
 
+```py
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        set1 = set(nums1)
+        set2 = set(nums2)
+
+        # 找到两个集合的交集
+        intersection = set1.intersection(set2)
+        
+        return list(intersection)
+
+```
+
 ## LC 202. Happy Number
 
 Description: Write an algorithm to determine if a number n is happy.
@@ -141,6 +154,36 @@ class Solution(object):
                 return False
             else:
                 record.add(n)
+```
+
+```py
+class Solution:
+    def helper(self, n: int) -> int:
+        result = 0
+        for i in str(n):
+            i = int(i)
+            result += i**2
+        return result
+    def isHappy(self, n: int) -> bool:
+    # 用一个helper fucntion来计算平方值
+    
+    # 创建一个set
+        ans = set()
+        
+        while True:
+            sum_v = self.helper(n)
+            if sum_v in ans:
+                return False
+            elif sum_v == 1:
+                return True
+            else:
+                ans.add(sum_v)
+                n = sum_v
+    # n = call helper funciton
+    # 假设n出现在set中，return false
+    # 不然就往set中添加数值
+    # 记得用while True来循环
+
 ```
 
 ## LC 1. Two Sum
