@@ -58,6 +58,9 @@ Output: [2]
 Ideal: 
 
 two for loops, but first for loop to record the value. Built a hash table, and iteral the second array to search the intersection
+* 无所谓哪个数组先，先遍历一个数组，把所有元素都放到哈希表里，然后用第二个比较就行
+
+
 Answer:
 
 ```py

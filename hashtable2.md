@@ -51,6 +51,7 @@ class Solution(object):
             for n4 in nums4:
                 key = - n3 - n4
                 if key in hashmap:
+                    # 不是count+=1，因为可能有多个，这是一个组合，例如1，2和2，1的和都为3
                     count += hashmap[key]
         return count
 
@@ -73,8 +74,7 @@ Ideal:
 * create a array to store the 26 letter
 * simple logic in magazine and ransomNote (+1/-1)
 * when you iterate the ransomNote, if there's 0 for some key, then return False
-
-
+* 用一个长度为26的数组来记录magazine里字母出现的次数
 
 
 Ans:
